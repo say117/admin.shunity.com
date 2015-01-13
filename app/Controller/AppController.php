@@ -31,4 +31,33 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+    public $uses = array('Company');
+    public $components = array(
+        'Auth' => array(
+            'authError' => 'ログインしてください。',
+            'flash' => array('element' => 'default', 'key' => 'flash', 'params' => array('class' => 'alert danger')),
+            'loginAction' => array('controller' => 'companies', 'action' => 'login'),
+            'loginRedirect' => array('controller' => 'companies', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'top', 'action' => 'index'),
+            'authenticate' => array(
+                'Form' => array(
+                    'userModel' => 'Company',
+                    'passwordHasher' => 'Blowfish',
+                    'fields' => array('username' => 'mail', 'password' => 'password')
+                )
+            )
+        ),
+        'Session'
+    );
+
+    public function beforeFilter() {
+        $this->set('company', $this->Auth->user());
+    }
+
+    // Set flash message and redirect to $to
+    protected function setFlashAndRedirect($message, $to, $params = array()) {
+        $this->Session->setFlash($message, 'default', $params);
+        $this->redirect($to);
+    }
 }
