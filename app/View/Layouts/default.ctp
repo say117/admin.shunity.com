@@ -59,13 +59,14 @@
                   <span class="icon-bar"></span>
                       </button>
                       <!-- <a href="/" class="navbar-brand logo">Shunity</a> -->
-                      <a href="/" class="navbar-brand"><b style='color:white;'>Shunity</b></a>
+                      <a href="/companies" class="navbar-brand"><b style='color:white;'><img width='25' height='25' src="/images/logo.jpg"> Shunity</b></a>
+                      <!-- <a href="/companies" class="navbar-brand"><b style='color:white;'>Shunity</b></a> -->
                     </div>
                     <nav class="collapse navbar-collapse" role="navigation">
                     
                     <ul class="nav navbar-nav">
                       <li>
-                        <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
+                        <a href="/companies"><i class="glyphicon glyphicon-home"></i> Home</a>
                       </li>
                       
                     </ul>
