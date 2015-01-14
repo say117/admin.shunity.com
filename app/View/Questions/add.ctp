@@ -7,12 +7,10 @@
   <div class="panel-body">
     <?php echo $this->Form->create('Question'); ?>
 	  <div class="form-group">
-	    <!-- <div> -->
-	      <label for="QuestionDescription">問題文</label>
-	      <?php echo $this->Form->input('Question.description', array('type' => 'textarea', 'label' => false, 'class' =>'form-control')); ?>
-	    <!-- </div> -->
+	    <label for="QuestionDescription">問題文</label>
+	    <?php echo $this->Form->input('Question.description', array('type' => 'textarea', 'label' => false, 'class' =>'form-control')); ?>
 	  </div>
-      <?php echo $this->Form->submit('追加', array('class' => 'btn btn-primary')); ?>
+      <?php echo $this->Form->submit('追加', array('class' => 'btn btn-block btn-primary')); ?>
     <?php echo $this->Form->end(); ?>
   </div>
 </div>

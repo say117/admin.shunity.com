@@ -37,7 +37,7 @@ class AppController extends Controller {
     public $components = array(
         'Auth' => array(
             'authError' => 'ログインしてください。',
-            'flash' => array('element' => 'default', 'key' => 'flash', 'params' => array('class' => 'alert danger')),
+            'flash' => array('element' => 'default', 'key' => 'flash', 'params' => array('class' => 'alert alert-danger')),
             'loginAction' => array('controller' => 'companies', 'action' => 'login'),
             'loginRedirect' => array('controller' => 'companies', 'action' => 'index'),
             'logoutRedirect' => array('controller' => 'pages', 'action' => 'top'),
