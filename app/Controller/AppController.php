@@ -39,7 +39,7 @@ class AppController extends Controller {
             'authError' => 'ログインしてください。',
             'flash' => array('element' => 'default', 'key' => 'flash', 'params' => array('class' => 'alert alert-danger')),
             'loginAction' => array('controller' => 'companies', 'action' => 'login'),
-            'loginRedirect' => array('controller' => 'companies', 'action' => 'index'),
+            'loginRedirect' => array('controller' => 'pages', 'action' => 'top'),
             'logoutRedirect' => array('controller' => 'pages', 'action' => 'top'),
             'authenticate' => array(
                 'Form' => array(
