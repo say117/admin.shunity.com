@@ -27,8 +27,8 @@ class QuestionsController extends AppController {
                 $this->set('errors', $this->Question->validationErrors);
                 return;
             }
-            return $this->Session->setFlash('問題登録に失敗しました', 'default', array('class' => 'alert danger'));
+            return $this->Session->setFlash('問題登録に失敗しました', 'default', array('class' => 'alert alert-danger'));
         }
-        $this->setFlashAndRedirect('問題登録が完了しました', '/companies/', array('class' => 'alert success'));
+        $this->setFlashAndRedirect('問題登録が完了しました', '/questions', array('class' => 'alert alert-success'));
     }
 }
