@@ -3,8 +3,8 @@
 
 <img class="bg" src="/images/company_top.jpg" alt="" />
 <div id="container">
-	<h1 style="color:#fff;" class="pull-left">Shunity</h1>
-
+  <img width='60' height='60' src="/images/logo.jpg" class="pull-left" style="margin-right: 15px;">
+  <h1 style="color:#fff;" class="pull-left">Shunity</h1>
 
 <!--Pulling Awesome Font -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
