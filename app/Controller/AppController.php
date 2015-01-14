@@ -40,7 +40,7 @@ class AppController extends Controller {
             'flash' => array('element' => 'default', 'key' => 'flash', 'params' => array('class' => 'alert danger')),
             'loginAction' => array('controller' => 'companies', 'action' => 'login'),
             'loginRedirect' => array('controller' => 'companies', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => 'top', 'action' => 'index'),
+            'logoutRedirect' => array('controller' => 'pages', 'action' => 'top'),
             'authenticate' => array(
                 'Form' => array(
                     'userModel' => 'Company',

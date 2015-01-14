@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Document</title>
+  <title>
+    <?php if ($this->fetch('title_for_layout') != '') echo $this->fetch('title_for_layout') . ' | '; ?>Shunity
+  </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <?php echo $this->Html->css('style'); ?>
+  <?php echo $this->Html->css('top'); ?>
+  <?php echo $this->Html->css('bootstrap.min'); ?>
+  <?php echo $this->Html->js('bootstrap.min'); ?>
+  <?php echo $this->Html->js('scripts.min'); ?>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -45,6 +52,9 @@
             <!-- main right col -->
             <div class="column col-sm-10 col-xs-11" id="main">
 
+              <?php if (empty($company)) { ?>
+
+              <?php } else { ?>
                 <!-- top nav -->
                 <div class="navbar navbar-blue navbar-static-top">
                     <div class="navbar-header">
@@ -92,6 +102,7 @@
                     </nav>
                 </div>
                 <!-- /top nav -->
+                <?php } ?>
 
                 <div class="padding">
                     <div class="full col-sm-9">
