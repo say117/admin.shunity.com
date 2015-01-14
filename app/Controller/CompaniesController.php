@@ -7,7 +7,6 @@ class CompaniesController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('login', 'add');
-        $this->set('company_name', $this->Auth->user('name'));
     }
 
     public function login() {

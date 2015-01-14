@@ -1,8 +1,8 @@
-<?php $this->assign('title_for_layout', '回答一覧'); ?>
+<?php $this->assign('title_for_layout', '解答一覧'); ?>
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">回答一覧</h3>
+    <h3 class="panel-title">解答一覧</h3>
   </div>
   <div class="panel-body">    
     <table class="table">
@@ -11,7 +11,7 @@
           <th>id</th>
           <th>問題番号</th>
           <th>ユーザ名</th>
-          <th>回答内容</th>
+          <th>解答内容</th>
           <th>オファー</th>
         </tr>
       </thead>

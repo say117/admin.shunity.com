@@ -22,7 +22,7 @@
                 <ul class="nav hidden-xs" id="lg-menu">
                     <li class="active"><a href="/questions/add"><i class="glyphicon glyphicon-plus"></i> 問題追加</a></li>
                     <li><a href="/questions"><i class="glyphicon glyphicon-list"></i> 問題一覧</a></li>
-                    <li><a href="/answers"><i class="glyphicon glyphicon-list-alt"></i> 回答一覧</a></li>
+                    <li><a href="/answers"><i class="glyphicon glyphicon-list-alt"></i> 解答一覧</a></li>
                     <li><a href="/offers"><i class="glyphicon glyphicon-user"></i> オファー一覧</a></li>
                 </ul>
 
