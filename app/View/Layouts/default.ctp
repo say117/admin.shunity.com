@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <?php echo $this->Html->css('style'); ?>
   <?php echo $this->Html->css('top'); ?>
-  <?php echo $this->Html->css('bootstrap.min'); ?>
   <?php echo $this->Html->js('bootstrap.min'); ?>
   <?php echo $this->Html->js('scripts.min'); ?>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
