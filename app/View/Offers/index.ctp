@@ -15,7 +15,13 @@
       </thead>
       <?php foreach ($offers as $offer) { ?>
         <tbody>
-          <tr>
+          <?php if ($offer['Offer']['status'] == 0) { ?>
+            <tr class="active">
+            <?php } elseif ($offer['Offer']['status'] == 1) { ?>
+            <tr class="info">
+          <?php } else { ?>
+            <tr class="danger">
+          <?php } ?>
             <td><?php echo $offer['Offer']['id']; ?></td>
             <td><?php echo $offer['User']['first_name'] . ' ' . $offer['User']['last_name']; ?></td>
             <?php if ($offer['Offer']['status'] == 0) { ?>
