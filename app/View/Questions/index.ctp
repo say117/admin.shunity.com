@@ -5,7 +5,7 @@
     <h3 class="panel-title">問題一覧</h3>
   </div>
   <div class="panel-body">    
-    <table class="table table-striped">
+    <table class="table">
       <thead>
         <tr>
           <th>id</th>

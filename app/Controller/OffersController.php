@@ -29,8 +29,8 @@ class OffersController extends AppController {
                 $this->set('errors', $this->Offer->validationErrors);
                 return;
             }
-            return $this->Session->setFlash('オファーに失敗しました', 'default', array('class' => 'alert danger'));
+            return $this->Session->setFlash('オファーに失敗しました', 'default', array('class' => 'alert alert-danger'));
         }
-        $this->setFlashAndRedirect('オファーを完了しました', '/companies/', array('class' => 'alert success'));
+        $this->setFlashAndRedirect('オファーを完了しました', '/offers', array('class' => 'alert alert-success'));
     }
 }

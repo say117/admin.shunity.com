@@ -7,6 +7,7 @@ class CompaniesController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
         $this->Auth->allow('login', 'add');
+        $this->set('company_name', $this->Auth->user('name'));
     }
 
     public function login() {
@@ -15,13 +16,13 @@ class CompaniesController extends AppController {
         }
 
         if (!$this->Auth->login()) {
-            return $this->Session->setFlash('ユーザー名かパスワードが違います', 'default', array('class' => 'alert danger'));
+            return $this->Session->setFlash('ユーザー名かパスワードが違います', 'default', array('class' => 'alert alert-danger'));
         }
-        $this->setFlashAndRedirect('ログインしました。', '/companies/', array('class' => 'alert success'));
+        $this->setFlashAndRedirect('ログインしました。', '/companies/', array('class' => 'alert alert-success'));
     }
 
     public function logout() {
-        $this->setFlashAndRedirect('ログアウトしました。', $this->Auth->logout(), array('class' => 'alert success'));
+        $this->setFlashAndRedirect('ログアウトしました。', $this->Auth->logout(), array('class' => 'alert alert-success'));
     }
 
     public function index() {

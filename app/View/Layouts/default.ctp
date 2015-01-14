@@ -21,14 +21,9 @@
 
                 <ul class="nav hidden-xs" id="lg-menu">
                     <li class="active"><a href="/questions/add"><i class="glyphicon glyphicon-plus"></i> 問題追加</a></li>
-                    <li><a href="#stories"><i class="glyphicon glyphicon-list"></i> 問題一覧</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> 回答一覧</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i> オファー一覧</a></li>
-                </ul>
-                <ul class="list-unstyled hidden-xs" id="sidebar-footer">
-                    <li>
-                      <a href="http://www.bootply.com"><h3>Bootstrap</h3> <i class="glyphicon glyphicon-heart-empty"></i> Bootply</a>
-                    </li>
+                    <li><a href="/questions"><i class="glyphicon glyphicon-list"></i> 問題一覧</a></li>
+                    <li><a href="/answers"><i class="glyphicon glyphicon-list-alt"></i> 回答一覧</a></li>
+                    <li><a href="/offers"><i class="glyphicon glyphicon-user"></i> オファー一覧</a></li>
                 </ul>
 
                 <!-- tiny only nav-->
@@ -58,28 +53,26 @@
                       <a href="/" class="navbar-brand"><b style='color:white;'>Shunity</b></a>
                     </div>
                     <nav class="collapse navbar-collapse" role="navigation">
-                    <form class="navbar-form navbar-left">
-                        <div class="input-group input-group-sm" style="max-width:360px;">
-                          <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                          <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                          </div>
-                        </div>
-                    </form>
+                    
                     <ul class="nav navbar-nav">
                       <li>
                         <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
                       </li>
-                      <li>
-                        <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Post</a>
-                      </li>
-                      <li>
-                        <a href="#"><span class="badge">badge</span></a>
-                      </li>
+                      
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> ログアウト</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i> <?php echo $company['name']; ?></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="">More</a></li>
+                          <li><a href="">More</a></li>
+                          <li><a href="">More</a></li>
+                          <li><a href="">More</a></li>
+                          <li><a href="">More</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="/companies/logout" class="dropdown-toggle" data-toggle="dropdown">ログアウト</a>
                         <ul class="dropdown-menu">
                           <li><a href="">More</a></li>
                           <li><a href="">More</a></li>
